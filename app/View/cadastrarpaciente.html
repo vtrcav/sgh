@@ -1,0 +1,108 @@
+<div style="padding:20px;max-width:800px;margin-bottom: 100px;" class="container card">
+    <div class="card-body">
+        <h4 style="padding:0 0 20px 0;margin-bottom:35px;" class="border-bottom">Cadastrar paciente</h4>
+        <form class="row g-3" action="?class=ListaPacientes&method=inserir" method="POST">
+
+            <div class="form-group">
+                <label for="prontuario" class="form-label">Prontuário</label>
+                <input type="text" class="form-control" id="prontuario" placeholder="Digite o prontuário do paciente"
+                    name="prontuario" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeCompleto" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto"
+                    placeholder="Digite o nome completo" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeMae" class="form-label">Nome da mãe</label>
+                <input type="text" class="form-control" id="nomeMae" name="nomeMae"
+                    placeholder="Digite o nome completo da mãe" autocomplete="off" required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" name="cpf"
+                    placeholder="Digite o número do CPF" autocomplete="off" maxlength="11" required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="cns" class="form-label">CNS</label>
+                <input type="text" class="form-control" id="cns" name="cns"
+                    placeholder="Digite o número do CNS" autocomplete="off" maxlength="15" required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="dnasc" class="form-label">Data de nascimento</label>
+                <input type="date" class="form-control" id="dnasc" name="dnasc" required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="dtadmissao" class="form-label">Data da admissão</label>
+                <input type="date" class="form-control" id="dtadmissao" name="dtadmissao" required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" autocomplete="off" required>
+            </div>
+            
+            <div class="form-group col-md-6">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" name="cep" autocomplete="off">
+        </div>
+        
+            <div class="form-group col-md-6">
+          <label for="endereco" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="endereco" name="endereco" autocomplete="off">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="bairro" name="bairro" autocomplete="off">
+        </div>
+            <div class="form-group col-md-6">
+                <label for="cidade" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="cidade" name="cidade" autocomplete="off">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="uf" class="form-label">UF</label>
+            <select id="uf" name="uf" class="form-select">
+                <option selected>Selecione...</option>
+                    <option></option>
+                    <option value="12">AC</option>
+                    <option value="27">AL</option>
+                    <option value="13">AM</option>
+                    <option value="16">AP</option>
+                    <option value="29">BA</option>
+                    <option value="23">CE</option>
+                    <option value="53">DF</option>
+                    <option value="32">ES</option>
+                    <option value="52">GO</option>
+                    <option value="21">MA</option>
+                    <option value="31">MG</option>
+                    <option value="50">MS</option>
+                    <option value="51">MT</option>
+                    <option value="15">PA</option>
+                    <option value="25">PB</option>
+                    <option value="26">PE</option>
+                    <option value="22">PI</option>
+                    <option value="41">PR</option>
+                    <option value="33">RJ</option>
+                    <option value="24">RN</option>
+                    <option value="11">RO</option>
+                    <option value="14">RR</option>
+                    <option value="43">RS</option>
+                    <option value="42">SC</option>
+                    <option value="28">SE</option>
+                    <option value="35">SP</option>
+                    <option value="17">TO</option>
+                    </select>
+        </div>
+            <div class="form-group mb-3">
+                <button type="submit" name="btn" class="btn-enviar btn btn-success btn-sm btn-block col-md-2">Cadastrar</button>
+            </div>
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div style="padding:20px;" class="container card">
+    <div class="card-body">
+        <h3 style="margin-bottom:15px">Lista de pacientes</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Prontuário</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Mãe</th>
+                    <th scope="col">Nascimento</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for paciente in idPaciente %}
+                <tr>
+                    <td>{{paciente.prontuario}}</td>
+                    <td>{{paciente.nomeCompleto}}</td>
+                    <td>{{paciente.nomeMae}}</td>
+                    <td>{{paciente.dnasc}}</td>
+                    <td>
+                            <a type="submit" class="btn-editar btn btn-sm btn-warning"
+                                href="?class=ListaPacientes&method=editar&id={{paciente.idPaciente}}" role="button"><i
+                                    class="far fa-edit"></i> Editar</a>
+                            <a class="btn-editar btn btn-sm btn-danger"
+                                href="?class=ListaPacientes&method=remover&id={{paciente.idPaciente}}" role="button"><i
+                                    class="far fa-trash-alt"></i> Remover</a>
+                    </td>  
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

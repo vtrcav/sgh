@@ -1,0 +1,37 @@
+<div style="padding:20px" class="container card">
+    <div class="card-body">
+        <h3 style="margin-bottom:30px">Lista de usuários</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Nível</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            {% for usuario in IdUsuario %}
+                <tr>
+                    <td>{{usuario.IdUsuario}}</td>
+                    <td>{{usuario.Nome}}</td>
+                    <td>{{usuario.Email}}</td>
+                    <td>{{usuario.NivelUsuario}}</td>
+                    <td>
+                        <form action="" method="POST">
+                            <a type="submit" class="btn-editar btn btn-sm btn-warning"
+                                href="?class=ListaUsuarios&method=editar&id={{usuario.IdUsuario}}" role="button"><i
+                                    class="far fa-edit"></i> Editar</a>
+                            <a class="btn-editar btn btn-sm btn-danger"
+                                href="?class=ListaUsuarios&method=remover&id={{usuario.IdUsuario}}" role="button"><i
+                                    class="far fa-trash-alt"></i> Remover</a>
+                        </form>
+                    </td>  
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div></div>
