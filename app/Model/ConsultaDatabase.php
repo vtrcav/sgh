@@ -26,7 +26,7 @@
         {
             $con = Connection::GetConn();
 
-            $sql = "SELECT * FROM estoque ORDER BY idProduto DESC";
+            $sql = "SELECT * FROM est_imed ORDER BY id DESC";
             $sql = $con->prepare($sql);
             $sql->execute();
 

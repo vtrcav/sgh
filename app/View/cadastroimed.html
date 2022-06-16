@@ -1,0 +1,187 @@
+<div style="padding:20px;max-width:800px" class="container card">
+    <div class="card-body">
+        <h4 style="padding:0 0 20px 0;margin-bottom:35px;" class="border-bottom">Cadastrar insumo/medicamento</h4>
+        <form class="row g-3" action="" method="POST">
+
+        <div class="form-group">
+                <label for="nomeProduto" class="form-label">Produto</label>
+                <input type="text" class="form-control" id="nomeProduto" placeholder="Digite o nome do produto"
+                    name="nomeProduto" required autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeQuimico" class="form-label">Nome Quimico</label>
+                <input type="text" class="form-control" id="nomeQuimico" name="nomeQuimico"
+                    placeholder="Digite o nome quimico" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="laboratorio" class="form-label">Laboratório</label>
+                <input type="text" class="form-control" id="laboratorio" name="laboratorio"
+                    placeholder="Digite o nome do laboratório" autocomplete="off">
+            </div>
+
+            <div class="col-md-6">
+                <label for="ffarmaceutica"  class="form-label">F. Farmacêutica</label>
+                <select class="form-control" id="ffarmaceutica" name="ffarmaceutica">
+                <option value=""></option>
+                        <option value="AEROSSOL NASAL">AEROSSOL NASAL</option>
+                        <option value="AEROSSOL ORAL">AEROSSOL ORAL</option>
+                        <option value="CAPSULA">CAPSULA</option>
+                        <option value="COMPRIMIDO">COMPRIMIDO</option>
+                        <option value="COMPRIMIDO DE LIBERACAO CONTROLADA">COMPRIMIDO DE LIBERACAO CONTROLADA</option>
+                        <option value="COMPRIMIDO MASTIGAVEL">COMPRIMIDO MASTIGAVEL</option>
+                        <option value="COMPRIMIDO SUBLINGUAL">COMPRIMIDO SUBLINGUAL</option>
+                        <option value="CREME">CREME</option>
+                        <option value="CREME VAGINAL">CREME VAGINAL</option>
+                        <option value="DRAGEA">DRAGEA</option>
+                        <option value="ELIXIR">ELIXIR</option>
+                        <option value="ENEMA">ENEMA</option>
+                        <option value="FRASCO">FRASCO</option>
+                        <option value="GEL">GEL</option>
+                        <option value="GEL ORAL">GEL ORAL</option>
+                        <option value="GEL VAGINAL">GEL VAGINAL</option>
+                        <option value="GELEIA">GELEIA</option>
+                        <option value="LOCAO">LOCAO</option>
+                        <option value="PASTA">PASTA</option>
+                        <option value="PO">PO</option>
+                        <option value="PO EFERVESCENTE">PO EFERVESCENTE</option>
+                        <option value="PO LIOFILIZADO">PO LIOFILIZADO</option>
+                        <option value="15">PO PARA INALACAO ORAL</option>
+                        <option value="PO LIOFILIZADO">PO PARA SOLUCAO INJETAVEL</option>
+                        <option value="PO PARA SOLUCAO INJETAVEL INTRAMUSCULAR">PO PARA SOLUCAO INJETAVEL INTRAMUSCULAR</option>
+                        <option value="PO PARA SOLUCAO INJETAVEL INTRAVENOSO">PO PARA SOLUCAO INJETAVEL INTRAVENOSO</option>
+                        <option value="PO PARA SOLUCAO ORAL">PO PARA SOLUCAO ORAL</option>
+                        <option value="PO PARA SUSPENSAO INJETAVEL">PO PARA SUSPENSAO INJETAVEL</option>
+                        <option value="PO PARA SUSPENSAO ORAL">PO PARA SUSPENSAO ORAL</option>
+                        <option value="POMADA">POMADA</option>
+                        <option value="POMADA OFTALMICA">POMADA OFTALMICA</option>
+                        <option value="SOLUCAO">SOLUCAO</option>
+                        <option value="SOLUCAO INJETAVEL">SOLUCAO INJETAVEL</option>
+                        <option value="SOLUCAO NASAL">SOLUCAO NASAL</option>
+                        <option value="SOLUCAO OFTALMICA">SOLUCAO OFTALMICA</option>
+                        <option value="SOLUCAO OFTALMICA">SOLUCAO OFTALMICA</option>
+                        <option value="SOLUCAO ORAL">SOLUCAO ORAL</option>
+                        <option value="SOLUCAO PARA INALACAO">SOLUCAO PARA INALACAO</option>
+                        <option value="SOLUCAO PARA NEBULIZACAO">SOLUCAO PARA NEBULIZACAO</option>
+                        <option value="SOLUCAO TOPICA">SOLUCAO TOPICA</option>
+                        <option value="SUPOSITORIO ADULTO">SUPOSITORIO ADULTO</option>
+                        <option value="SUPOSITORIO INFANTIL">SUPOSITORIO INFANTIL</option>
+                        <option value="SUSPENSAO INJETAVEL">SUSPENSAO INJETAVEL</option>
+                        <option value="SUSPENSAO NASAL">SUSPENSAO NASAL</option>
+                        <option value="SUSPENSAO ORAL">SUSPENSAO ORAL</option>
+                        <option value="SUSPENSAO TOPICA">SUSPENSAO TOPICA</option>
+                        <option value="TINTURA">TINTURA</option>
+                        <option value="SHAMPOO">SHAMPOO</option>
+                        <option value="XAROPE">XAROPE</option>
+                        </select>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="apresentacao" class="form-label">Apresentação</label>
+                <select class="form-control" id="apresentacao" name="apresentacao" required>
+                <option value=""></option>
+                    <option value="ADESIVO">ADESIVO</option>
+                    <option value="AMPOLA">AMPOLA</option>
+                    <option value="BALDE">BALDE</option>
+                    <option value="BISNAGA">BISNAGA</option>
+                    <option value="BLOCO">BLOCO</option>
+                    <option value="BOLSA">BOLSA</option>
+                    <option value="CAIXA">CAIXA</option>
+                    <option value="CAPSULA">CAPSULA</option>
+                    <option value="CARPULE">CARPULE</option>
+                    <option value="CARTELA">CARTELA</option>
+                    <option value="COMPRIMIDO">COMPRIMIDO</option>
+                    <option value="DRAGEA">DRAGEA</option>
+                    <option value="EMBALAGEM">EMBALAGEM</option>
+                    <option value="ENVELOPE">ENVELOPE</option>
+                    <option value="ESTOJO">ESTOJO</option>
+                    <option value="FICHA">FICHA</option>
+                    <option value="FOLHA">FOLHA</option>
+                    <option value="FRASCO (AMPOLA)">FRASCO (AMPOLA)</option>
+                    <option value="FRASCO (GOTAS)">FRASCO (GOTAS)</option>
+                    <option value="FRASCO (ML)">FRASCO (ML)</option>
+                    <option value="GALAO">GALAO</option>
+                    <option value="INJETÁVEL">INJETÁVEL</option>
+                    <option value="KG">KG</option>
+                    <option value="KTI">KIT</option>
+                    <option value="LATA">LATA</option>
+                    <option value="LITRO">LITRO</option>
+                    <option value="METRO">METRO</option>
+                    <option value="MORFINA">MORFINA</option>
+                    <option value="PACOTE">PACOTE</option>
+                    <option value="PARES">PARES</option>
+                    <option value="POTE">POTE</option>
+                    <option value="REFIL">REFIL</option>
+                    <option value="RESMA">RESMA</option>
+                    <option value="ROLO">ROLO</option>
+                    <option value="SABONETE">SABONETE</option>
+                    <option value="SACHE">SACHE</option>
+                    <option value="SERINGA">SERINGA</option>
+                    <option value="SUPOSITORIO">SUPOSITORIO</option>
+                    <option value="TUBETE">TUBETE</option>
+                    <option value="TUBE">TUBO</option>
+                    <option value="UNIDADE">UNIDADE</option>
+                    <option value="XAROPE">XAROPE</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="grupo" class="form-label">Grupo</label>
+                <select class="form-control" id="grupo" name="grupo" required>
+                <option value=""></option>
+                    <option value="ANTIBIOTICOS">ANTIBIOTICOS</option>
+                    <option value="EQUIPAMENTOS MEDICOS E CIRURGICOS">EQUIPAMENTOS MEDICOS E CIRURGICOS</option>
+                    <option value="FORMULARIOS / GRAFICOS">FORMULARIOS / GRAFICOS</option>
+                    <option value="GENEROS ALIMENTICIOS">GENEROS ALIMENTICIOS</option>
+                    <option value="INSUMOS DE LABORATORIO">INSUMOS DE LABORATORIO</option>
+                    <option value="MATERIAIS DE ESCRITORIO E INFORMATICA">MATERIAIS DE ESCRITORIO E INFORMATICA</option>
+                    <option value="MATERIAIS DE HIGIENIZACAO">MATERIAIS DE HIGIENIZACAO</option>
+                    <option value="MATERIAIS MEDICOS">MATERIAIS MEDICOS</option>
+                    <option value="MATERIAIS ODONTOLOGICOS">MATERIAIS ODONTOLOGICOS</option>
+                    <option value="MEDICAMENTOS">MEDICAMENTOS</option>
+                    </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="subgrupo" class="form-label">Sub-Grupo</label>
+                <select class="form-control" id="subgrupo" name="subgrupo">
+                <option value=""></option>
+                    <option value="ANTEMICÓTICO OU ANTIFURGICO">ANTEMICÓTICO OU ANTIFURGICO</option>
+                    <option value="ANTIALéRGICO">ANTIALéRGICO</option>
+                    <option value="ANTIALéRGICO">ANTIBIÓTICOS</option>
+                    <option value="ANTIALéRGICO">ANTIDIABÉTICOS TIPO II E III</option>
+                    <option value="COMODATOS">COMODATOS</option>
+                    <option value="EPI">EPI</option>
+                    <option value="GÁS">GÁS</option>
+                    <option value="HIGIENIZACAO">HIGIENIZACAO</option>
+                    <option value="HORT FRUT">HORT FRUT</option>
+                    <option value="MATERIAL DE LIMPEZA">MATERIAL DE LIMPEZA</option>
+                    <option value="MATERIAL DESCARTAVEIS">MATERIAL DESCARTAVEIS</option>
+                    <option value="MEDICAMENTOS ISENTOS DE PRESCRIÇÃO (MIP)">MEDICAMENTOS ISENTOS DE PRESCRIÇÃO (MIP)</option>
+                    <option value="NÃO PERECÍVEIS">NÃO PERECÍVEIS</option>
+                    <option value="PERECÍVEIS">PERECÍVEIS</option>
+                    <option value="PROTETOR GÁSTRICO">PROTETOR GÁSTRICO</option>
+                    <option value="PSICOTROPICOS">PSICOTROPICOS</option>
+                    <option value="QUIMICO">QUIMICO</option>
+                    <option value="SACOS">SACOS</option>
+                    <option value="SOLUÇÕES E ELETROLITOS">SOLUÇÕES E ELETROLITOS</option>
+                    </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="estoque" class="form-label">Estoque</label>
+                <input type="number" class="form-control" id="estoque" name="estoque"
+                    placeholder="Digite a quantidade do produto" autocomplete="off" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="qtdeminima" class="form-label">Qtde. mínima</label>
+                <input type="number" class="form-control" id="qtdeminima" name="qtdeminima"
+                    placeholder="Digite a quantidade minima do produto" autocomplete="off" redquired>
+            </div>
+                        
+            <div class="mb-3"><button type="submit" class="btn-enviar btn btn-success btn-sm btn-block col-md-2">Cadastrar</button></div>
+        </form>
+    </div></div>

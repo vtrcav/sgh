@@ -8,7 +8,7 @@
             
             session_destroy();
 
-            header('Location: ./');
+            echo '<script>location.href="?class=Login"</script>';
         }
     }
 ?>

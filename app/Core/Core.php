@@ -43,6 +43,8 @@
             
             if ($this->user){
                 $permitions = $_SESSION['usr']['permitions'];
+                $usrname = $_SESSION['usr']['name_user'];
+
                 $pg_permission = explode(',', $permitions);
                 
                 $template = file_get_contents('app/Template/estrutura.html');
@@ -50,9 +52,14 @@
                 $saida = ob_get_contents();
                     ob_end_clean();
 
-                    $tplPronto = str_replace('{{conteudo}}', $saida, $template);
+                    $areasdesubs = array('{{nome}}', '{{conteudo}}');
+                    $parasubs = array($usrname, $saida);
+
+                    $tplPronto = str_replace($areasdesubs, $parasubs, $template);
+                   
 
                     echo $tplPronto;
+
 
                 if (!isset($this->controller) || !in_array($this->controller, $pg_permission)) {
                         $this->controller = 'HomeController';

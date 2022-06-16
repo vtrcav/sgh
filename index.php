@@ -16,6 +16,7 @@
 
     require_once 'app/Model/User.php';
     require_once 'app/Model/Pacientes.php';
+    require_once 'app/Model/IMedicamentos.php';
     require_once 'app/Model/ConsultaDatabase.php';
 
     require_once 'vendor/autoload.php';

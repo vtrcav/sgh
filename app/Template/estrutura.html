@@ -40,24 +40,41 @@
                 Insumos e Medicamentos
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a id="cadastrar-insmed" class="dropdown-item" href="#">Cadastrar</a></li>
+                <li><a id="cadastrar-insmed" class="dropdown-item" href="?class=ListaInsumoseMedicamentos&method=cadastrar">Cadastrar</a></li>
                 <li><a class="dropdown-item" href="?class=ListaInsumoseMedicamentos">Listar</a></li>
               </ul>
             </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Usuários
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a id="cadastrar-usu" class="dropdown-item" href="#">Cadastrar</a></li>
+                <li><a id="cadastrar-usu" class="dropdown-item" href="?class=ListaUsuarios&method=cadastrar">Cadastrar</a></li>
                 <li><a id="listar-usu" class="dropdown-item" href="?class=ListaUsuarios">Listar</a></li>
               </ul>
-            </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="?class=Logout">Sair</a>
+            </li> -->
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user" style="margin-right:4px;"></i> {{nome}}
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item disabled" href="#">Meus dados</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h6 class="dropdown-header">Grupos</h6></li>
+                    <li><a class="dropdown-item disabled" href="#">Criar grupo</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Listar grupos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h6 class="dropdown-header">Usuários</h6></li>
+                    <li><a class="dropdown-item" href="?class=ListaUsuarios&method=cadastrar">Cadastrar usuário</a></li>
+                    <li><a class="dropdown-item" href="?class=ListaUsuarios">Listar usuários</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a id="sair" class="dropdown-item" href="?class=Logout">Sair</a></li>
+                  </ul>
                 </li>
               </ul>
-              <span class="navbar-text">Olá, {{nome}}</span>
+              <!-- <span class="navbar-text">Olá, {{nome}}</span> -->
             </div>
           </div>
     </nav>

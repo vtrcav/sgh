@@ -1,0 +1,59 @@
+<div style="padding:20px;max-width:800px" class="container card">
+    <div class="card-body">
+        <form action="?class=ListaUsuarios&method=inserir" class="row g-3" method="POST">
+            <h4 style="padding:0 0 20px 0;margin-bottom:35px;" class="border-bottom">Editar usuário</h4>
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input class="form-control" type="text" name="nome" value="{{Nome}}"
+                    autocomplete="off" />
+            </div>
+
+            <div class="col-md-6">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input class="form-control" type="text" name="sobrenome" value="{{Sobrenome}}" />
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input class="form-control" type="email" name="email"
+                value="{{Email}}" />
+            </div>
+            <div class="col-md-6">
+                <label for="nivelUsuario" class="form-label">Grupo</label>
+                <select class="form-control" name="nivelUsuario">
+                    <option value="1">Administrador</option>
+                    <option value="2">Farmacêutico</option>
+                    <option value="3">Conferente</option>
+                </select>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="senha" class="form-label">Senha</label>
+                <input class="form-control" type="password" id="senhadigitada" name="senhadigitada" placeholder="Digite uma senha" />
+            </div>
+
+            <div class="col-md-6">
+                <label for="senha2" class="form-label">Repetir senha</label>
+                <input class="form-control" type="password" id="senha2" name="senha2"
+                    placeholder="Digite sua senha novamente" oninput="validaSenha(this)" />
+                <small style="display:none" id="msg-erro">A senha deve ser igual nos dois campos!</small>
+            </div>
+         
+            
+            <br>
+            <div class="mb-3"><button type="submit" class="btn-enviar btn btn-success btn-sm btn-block col-md-2">Editar</button></div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validaSenha(input) {
+        if (input.value != document.getElementById('senhadigitada').value) {
+            input.setCustomValidity('A senha deve ser igual nos dois campos!');
+            document.getElementById('msg-erro').style.display = "block"
+        } else {
+            input.setCustomValidity('');
+            document.getElementById('msg-erro').style.display = "none"
+        }
+    }
+    </script>
