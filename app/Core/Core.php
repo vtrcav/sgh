@@ -41,6 +41,7 @@
                 $this->controller = 'LoginController';
             }
             
+            //oq fazer se existe um usuário logado
             if ($this->user){
                 $permitions = $_SESSION['usr']['permitions'];
                 $usrname = $_SESSION['usr']['name_user'];
@@ -60,17 +61,24 @@
 
                     echo $tplPronto;
 
-
+                //caso a url não contenha uma classe
                 if (!isset($this->controller) || !in_array($this->controller, $pg_permission)) {
                         $this->controller = 'HomeController';
                         $this->method = 'index';
                 }
-   
+                //caso não exista o metódo na classe solicitada
+                if(!method_exists($this->controller, $this->method)){
+                    $this->method = 'index';
+                    //echo 'não existe';
+                }
+
+            //caso não exista um usuário logado
             } else{
                 $pg_permission = ['LoginController'];
    
                 if (!isset($this->controller) || !in_array($this->controller, $pg_permission)) {
                         $this->controller = 'LoginController';
+                        $this->method = 'index';
                 }
             } 
 

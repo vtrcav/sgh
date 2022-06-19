@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="app/assets/css/bootstrap.css">
+    <link href="app/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="app/assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="app/assets/fontawesome/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="app/assets/css/estilo.css">
+    <link rel="stylesheet" href="app/assets/css/dataTables.bootstrap5.min.css">
     <script src="app/assets/js/jquery.min.js"></script>
     <script src="app/assets/js/menu.js"></script>
     <script src="app/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="app/assets/js/15b4b8b90e.js"></script>
+    <script src="app/assets/fontawesome/all.js"></script>
     <script src="app/assets/js/modal-with-custom-action.js"></script>
+    <script src="app/assets/js/jquery.dataTables.min.js"></script>
+    <script src="app/assets/js/dataTables.bootstrap5.min.js"></script>
     <link rel="shortcut icon" href="app/assets/img/ico.png" type="image/x-icon">
     <title>SGH/CAPS</title>
 </head>
@@ -42,6 +48,16 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a id="cadastrar-insmed" class="dropdown-item" href="?class=ListaInsumoseMedicamentos&method=cadastrar">Cadastrar</a></li>
                 <li><a class="dropdown-item" href="?class=ListaInsumoseMedicamentos">Listar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Movimentações
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a id="cadastrar-insmed" class="dropdown-item" href="#" disabled>Entrada de produtos</a></li>
+                <li><a class="dropdown-item" href="#" disabled>Saída de produtos</a></li>
+                <li><a class="dropdown-item" href="#" disabled>Dispensação de medicamentos</a></li>
               </ul>
             </li>
                 <!-- <li class="nav-item dropdown">
