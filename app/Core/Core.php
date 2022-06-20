@@ -47,7 +47,7 @@
                 $usrname = $_SESSION['usr']['name_user'];
 
                 $pg_permission = explode(',', $permitions);
-                
+
                 $template = file_get_contents('app/Template/estrutura.html');
 
                 $saida = ob_get_contents();
