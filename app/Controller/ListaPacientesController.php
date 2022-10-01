@@ -87,10 +87,8 @@
 			try {
 				Pacientes::atualizar($_POST);
 
-				/* echo '<script>location.href="?class=ListaPacientes"</script>'; */
-                echo '<div id="alerta" class="alert alert-success" role="alert">
-                Paciente <b></b> atualizado
-                </div>';
+                echo '<script>alert("Paciente '.$_POST['nomeCompleto'].' atualizado");</script>';
+                echo '<script>location.href="?class=ListaPacientes"</script>';
 
 			} catch (Exception $e) {
 
@@ -105,7 +103,7 @@
             try{
                 Pacientes::inserir($_POST);
 
-                echo '<script>alert("Paciente '.$_POST['nomeCompleto'].' foi cadastrado!")</script>';
+                echo '<script>alert("Paciente '.$_POST['nomeCompleto'].' cadastrado!")</script>';
                 echo '<script>location.href="?class=ListaPacientes"</script>';
 
             }catch (Exception $e){
@@ -121,7 +119,7 @@
             try{
                 Pacientes::remover($id);
 
-                echo '<script>alert("Paciente '.$_POST['nomeCompleto'].' removido!")</script>';
+                echo '<script>alert("Paciente removido!")</script>';
                 echo '<script>location.href="?class=ListaPacientes"</script>';
             }catch (Exception $e){
                 echo '<script>alert("'.$e->getMessage().'")</script>';
